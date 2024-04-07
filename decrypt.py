@@ -1,6 +1,6 @@
 #!/usr/bin/enc python3 
 
-#Full Credits to Sam_sepiol
+#Full Credits to LimerBoy
 import os
 while True:
     try:
