@@ -103,7 +103,7 @@ if __name__ == '__main__':
     try:
         hentai = f"{os.path.expanduser('~')}\\Saved Games\\decrypted_password.csv"
         #Create Dataframe to store passwords
-        with open('hentai', mode='w', newline='', encoding='utf-8') as decrypt_password_file:
+        with open(hentai, mode='w', newline='', encoding='utf-8') as decrypt_password_file:
             csv_writer = csv.writer(decrypt_password_file, delimiter=',')
             csv_writer.writerow(["index","url","username","password"])
             #(1) Get secret key
