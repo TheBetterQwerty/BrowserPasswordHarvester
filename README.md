@@ -10,3 +10,5 @@ WORKS FOR BROWSERS USING :
 2)BRAVE
 
 3)OPERA
+
+more browsers support will come :)
